@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Ninja Lite Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
+</head>
+<body class="white dark">
+    <label for="label">Toggle for Dark Mode</label>
+    <a href="#" class="toggler" id="toggle"><img src="Images/Moon.png" class="moon"><img src="Images/Sun.png" class="sun"></a>
+    <div id="container" class="darkcontainer default">
+        <div id="lives"></div>
+        <div id="name">
+            Cut the Fruits
+        </div>
+        <div id="scoreContainer">
+            Score : <span id = "score">0</span>
+        </div>
+        <div id="game">
+            <img id="fruit1" class="fruit">
+        </div>
+        <div id="gameover">
+            Game Over!
+            <br>
+            Your Score is <span id = "final">0</span>
+        </div>
+        <button id="start">Start Game</button>
+    </div>
+    <audio id="slicesound">
+        <source src="Sounds/cut.mp3"></source>
+        <source src="Sounds/cut.ogg"></source>
+    </audio>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="jQuery.js"></script>
+</body>
+</html>

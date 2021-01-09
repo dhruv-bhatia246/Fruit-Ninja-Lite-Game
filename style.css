@@ -1,0 +1,181 @@
+body{
+    margin-top: 20px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    /* transition: all 0.5s; */
+}
+#container{
+    width: 1000px;
+    height: 600px;
+    border-radius: 20px;
+    margin: 100px auto;
+    margin-top: 30px;
+    text-align: center;
+}
+#scoreContainer{
+    height: 28px;
+    width: 100px;
+    background-color: bisque;
+    position: absolute;
+    left: 1110px;
+    top: 120px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    border: 2px solid black;
+}
+#lives{
+    height: 28px;
+    width: 100px;
+    background-color: bisque;
+    position: absolute;
+    top: 120px;
+    left: 280px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    border: 2px solid black;
+    display: none;
+}
+#game{
+    box-sizing: border-box;
+    padding: 20px;
+    width: 900px;
+    height: 400px;
+    background-color: beige;
+    border-radius: 20px;
+    border: 3px solid rgb(117, 20, 20);
+    box-shadow: 6px 6px 10px rgb(250, 13, 13);
+    position: relative;
+    left: 50px;
+    top: 100px;
+    overflow: hidden;
+}
+#name{
+        height: 38px;
+        width: 200px;
+        background-color: rgb(156, 101, 34);
+        color: white;
+        position: absolute;
+        top: 115px;
+        left: 680px;
+        font-size: 22px;
+        border-radius: 10px;
+        text-align: center;
+        padding: 5px;
+        border: 2px solid black;
+        font-weight: bold;
+}
+#start{
+    height: 38px;
+    width: 200px;
+    background-color: rgb(70, 233, 138);
+    /* color: white; */
+    position: absolute;
+    top: 630px;
+    left: 680px;
+    font-size: 22px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid black;
+    font-weight: bold;
+    outline: none;
+}
+#start:active{
+    top: 633px;
+    left: 681px;
+    background-color: rgb(48, 204, 113);
+}
+#start:hover{
+    background-color: rgb(125, 125, 231);
+    transition: all 0.2s;
+}
+#gameover{
+    width: 500px;
+    height: 250px;
+    /* background-color: yellowgreen; */
+    position: absolute;
+    top: 260px;
+    left: 500px;
+    background: linear-gradient(rgb(56, 208, 228),rgb(37, 95, 172));
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    /* color: white; */
+    border: 1px solid black;
+    z-index: 2;
+    display: none;
+    box-shadow: 5px 5px 8px blueviolet;
+}
+.life{
+    width: 18px;
+    height: 18px;
+    padding: 5px;
+}
+.fruit{
+    display: none;
+    height: 90px;
+    position: absolute;
+}
+
+a.toggler {
+    align-items: center;
+    background: green;
+    cursor: pointer;
+    border: 2px solid black;
+    border-right-width: 50px;
+    padding: 0 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all .5s ease;
+    /* float: right; */
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+a.toggler.off {
+    background: red;
+    border-right-width: 2px;
+    border-left-width: 50px;
+}
+
+label{
+    /* float: right; */
+    margin-right: 5px;
+    /* position: absolute; */
+    margin-left: 1150px;
+}
+
+.dark{
+    background-image: url("Images/Wallpaper.jpg");
+}
+
+.white{
+    background-image: url("Images/Wallpaper1.jpg");
+}
+
+.whitetext{
+    color: white;
+}
+
+.sun{
+    height: 14px;
+}
+
+.moon{
+    display: none;
+    height: 14px;
+}
+
+.darkcontainer{
+    background-color: brown;
+}
+
+.default{
+    background-color: rgb(184, 182, 72);
+}
